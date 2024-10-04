@@ -1,0 +1,28 @@
+### get products
+GET http://localhost:8000/api/products
+
+### create product
+POST http://localhost:8000/api/products
+Content-Type: application/json
+
+{
+    "name": "Product 1",
+    "description": "Description 1",
+    "price": 150.00,
+    "stock": 10
+}
+
+### get product by id
+DELETE http://localhost:8000/api/products/1
+
+
+### delete product by id
+PUT http://localhost:8000/api/products/2
+Content-Type: application/json
+
+{
+    "name": "Product 2 mod",
+    "description": "Description 2 mod",
+    "price": 120.20,
+    "stock": 100
+}
